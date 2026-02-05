@@ -1,0 +1,16 @@
+# Игнорируем специфичные для системы файлы (Mac/Windows)
+.DS_Store
+Thumbs.db
+
+# Игнорируем папки с загрузками (которые вне backend/client)
+uploads/
+temp_uploads/
+test_storage/
+
+# Игнорируем папку admin, пока она пустая/не нужна
+admin/
+
+# На всякий случай дублируем критичные вещи (хуже не будет)
+.env
+node_modules/
+dist/

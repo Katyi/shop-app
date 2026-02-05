@@ -1,0 +1,263 @@
+{
+  "translation": {
+    "login": {
+      "signIn": "SIGN IN",
+      "password": "Password",
+      "login": "Login",
+      "notRememberPassword": "DO NOT YOU REMEMBER THE PASSWORD?",
+      "createNewAccount": "CREATE A NEW ACCOUNT"
+    },
+    "register": {
+      "createAccount": "CREATE AN ACCOUNT",
+      "username": "Username",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "create": "CREATE",
+      "alreadyHaveAccount": "SIGN IN IF YOU ALREADY HAVE AN ACCOUNT"
+    },
+    "header": {
+      "shop_name": "Shop",
+      "search_placeholder": "Search..."
+    },
+    "announcement": {
+      "message": "Super Deal! Free Shipping on Orders Over $50"
+    },
+    "slider": {
+      "sliderOneTitle": "THE RESET",
+      "sliderOneDesc": "NEW ARRIVALS",
+      "sliderTwoTitle": "ONLINE EXCLUSIVE",
+      "sliderTwoDesc": "LIMITED EDITION PIECES",
+      "sliderThreeTitle": "SALE",
+      "sliderThreeDesc": "NOW UP TO 60% OFF",
+      "shopNowButton": "SHOP NOW"
+    },
+    "categories": {
+      "all": "All products",
+      "women": "WOMEN",
+      "men": "MEN",
+      "accessories": "ACCESSORIES",
+      "new": "New Arrivals",
+      "sale": "SALE",
+      "trousers": "TROUSERS",
+      "jeans": "JEANS",
+      "knitwear": "Knitwear & Cardigans",
+      "coats": "Coats and Jackets",
+      "blouses": "Shirts & Blouses",
+      "shirts": "Shirts",
+      "dresses": "Dresses",
+      "t-shirts": "T-shirts",
+      "socks": "Socks",
+      "shoes": "Shoes",
+      "bags": "Bags",
+      "jewellery": "Jewellery"
+    },
+    "categoryItem": {
+      "shopNowButton": "SHOP NOW"
+    },
+    "colorOptions": {
+      "all": "All",
+      "white": "White",
+      "black": "Black",
+      "red": "Red",
+      "blue": "Blue",
+      "yellow": "Yellow",
+      "green": "Green",
+      "olive": "Olive",
+      "pink": "Pink",
+      "beige": "Beige",
+      "brown": "Brown",
+      "navy": "Navy",
+      "orange": "Orange",
+      "gray": "Gray",
+      "gold": "Gold",
+      "silver": "Silver",
+      "khaki": "Khaki",
+      "indigo": "Indigo"
+    },
+    "sizeOptions": {
+      "all": "All",
+      "oneSize": "One size"
+    },
+    "genderOptions": {
+      "male": "Male",
+      "female": "Female"
+    },
+    "productList": {
+      "allCat": "All Products",
+      "home": "To Home Page",
+      "clear": "Clear filters",
+      "filter": "Filter Products",
+      "sort": "Sort Products",
+      "color": "Color",
+      "size": "Size",
+      "newest": "Newest",
+      "oldest": "Oldest",
+      "priceAsc": "Price (asc)",
+      "priceDesc": "Price (desc)",
+      "resultsFor": "Search results for",
+      "clearSearch": "Clear Search",
+      "results": "results"
+    },
+    "productDetail": {
+      "loading": "Loading...",
+      "noProductFound": "Product not found",
+      "toHomePageButton": "To Home Page",
+      "continueShoppingButton": "Continue Shopping",
+      "unitPrice": "Price",
+      "color": "Color",
+      "size": "Size",
+      "addToCart": "Add to Cart",
+      "removeFromWishlist": "Remove From Wishlist",
+      "addToWishlist": "Add To Wishlist"
+    },
+    "products": {
+      "noProductsFound": "No products found.",
+      "loading": "Loading...",
+      "loadMoreButton": "Load more products"
+    },
+    "product": {
+      "addToCart": "Add to Cart",
+      "quickView": "Quick View",
+      "removeFromWishlist": "Remove from Wishlist",
+      "addToWishlist": "Add to Wishlist"
+    },
+    "profile": {
+      "shoppingBag": "Shopping Bag",
+      "wishlist": "Wishlist",
+      "continueShoppingButton": "Continue Shopping",
+      "toHomePageButton": "To Home Page",
+      "updateAccountButton": "Update Account",
+      "personalInfo": "Personal info",
+      "fullName": "Full Name",
+      "birthday": "Birthday",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "gender": "Gender",
+      "selectDate": "Select Date",
+      "occupation": "Occupation",
+      "active": "active",
+      "orderHistory": "Order History",
+      "loadingHistory": "Loading history...",
+      "noOrdersYet": "You haven't made any orders yet.",
+      "orderDate": "Date",
+      "orderID": "Order ID",
+      "status": "Status",
+      "orderTotalAmount": "Total Amount",
+      "orderUnitQuantity": "Quantity",
+      "orderUnitPrice": "Unit Price",
+      "changePhoto": "Change Photo",
+      "selectGender": "Select Gender",
+      "male": "Male",
+      "female": "Female",
+      "saveChangesButton": "Save",
+      "cancelButton": "Cancel"
+    },
+    "wishlist": {
+      "title": "YOUR WISHLIST",
+      "continueShoppingButton": "Continue Shopping",
+      "toHomePageButton": "To Home Page",
+      "clearAllButton": "Clear Wishlist",
+      "shoppingBag": "Shopping Bag",
+      "wishlist": "Wishlist",
+      "loadingWishlist": "Loading wishlist...",
+      "wishlistEmpty": "Your wishlist is empty",
+      "color": "Color",
+      "size": "Size",
+      "unitQuantity": "Quantity",
+      "unitPrice": "Price",
+      "addToCartButton": "Add to Cart",
+      "deleteButton": "Delete",
+      "toastClearEntireList": "Clear entire list?",
+      "toastYes": "Yes, clear entire list",
+      "toastCancel": "Cancel",
+      "toastSelectColor": "Select color",
+      "toastSelectSize": "Select size"
+    },
+    "cart": {
+      "title": "YOUR SHOPPING BAG",
+      "continueShoppingButton": "Continue Shopping",
+      "toHomePageButton": "To Home Page",
+      "clearAllButton": "Clear Cart",
+      "shoppingBag": "Shopping Bag",
+      "wishlist": "Wishlist",
+      "loadingCart": "Loading cart...",
+      "cartEmpty": "Your cart is empty",
+      "color": "Color",
+      "size": "Size",
+      "unitPrice": "Price",
+      "orderSummary": "ORDER SUMMARY",
+      "subtotal": "Subtotal",
+      "shipping": "Estimated Shipping",
+      "shippingDiscount": "Shipping Discount",
+      "total": "Total",
+      "checkout": "CHECKOUT",
+      "paymentDetails": "Payment Details",
+      "toastClearEntireList": "Clear entire list?",
+      "toastAttributesError": "Color or size not selected for",
+      "toastCheckoutError": "Checkout Error",
+      "toastYes": "Yes, clear",
+      "toastCancel": "Cancel",
+      "freeShippingPromo": "Add {{amount}} for free shipping!"
+    },
+    "newsletter": {
+      "title": "Contact Us",
+      "desc": "Send us an email",
+      "thank": "Thank you! We'll get back to you soon.",
+      "send": "SEND MESSAGE",
+      "sending": "SENDING...",
+      "sendAgain": "Send another message"
+    },
+    "footer": {
+      "shop_name": "SHOP",
+      "description": "This is my portfolio online-shop.",
+      "techStack": "Full-Stack shopping app using React, NestJS, Postgres, JWT, Zustand, Stripe.",
+      "links": "Useful Links",
+      "home": "Home",
+      "cart": "Cart",
+      "men": "Men",
+      "women": "Women",
+      "accessories": "Accessories",
+      "myAccount": "My Account",
+      "wishlist": "Wishlist",
+      "contact": "Contact",
+      "address": "151 W 34th St., New York, NY 10001",
+      "phone": "(212) 695-4400"
+    },
+    "checkoutForm": {
+      "toastError": "An unknown error occurred",
+      "toastPaymentSuccess": "Payment successful and order created!",
+      "toastFailedSaveOrder": "Payment ok, but failed to save order.",
+      "processing": "Processing...",
+      "payNow": "Pay now"
+    },
+    "orderSuccess": {
+      "thankYou": "Thank you!",
+      "paymentSuccessful": "Your payment was successful and your order is being processed.",
+      "backToShopping": "Back to Shopping"
+    },
+    "searchDrawer": {
+      "search_placeholder": "Search...",
+      "trending_searches": "Trending searches",
+      "previous_searches": "Previous searches",
+      "clear": "Clear"
+    },
+    "cartStore": {
+      "loginRequired": "Please log in to your account",
+      "productAdded": "The product has been added to the cart",
+      "failedToAdd": "Failed to add product",
+      "itemRemoved": "The item has been removed from the cart",
+      "failedToDelete": "Failed to delete item",
+      "cartCleared": "The cart has been cleared.",
+      "failedToClearCart": "Failed to clear the cart",
+      "CartUpdated": "Cart updated",
+      "failedToUpdateCart": "Failed to update the cart"
+    },
+    "wishlistStore":{
+      "loginRequired": "Please log in to your account",
+      "wishlistAlreadyEmpty": "The wishlist is already empty",
+      "wishlistCleared": "Wishlist cleared",
+      "failedToClearWishlist": "Failed to clear the wishlist"
+    }
+  }
+}

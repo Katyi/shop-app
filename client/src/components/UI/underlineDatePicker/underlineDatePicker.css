@@ -1,0 +1,28 @@
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+/* Стили самого поп-апа */
+.react-datepicker {
+  font-family: inherit !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 0px !important;
+  /* Квадратный стиль */
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.react-datepicker__header {
+  background-color: white !important;
+  border-bottom: 1px solid #f3f4f6 !important;
+  padding-top: 10px !important;
+}
+
+.react-datepicker__day--selected {
+  background-color: black !important;
+  /* Черный акцент как в твоем дизайне */
+  border-radius: 0px !important;
+}
+
+.react-datepicker__day:hover {
+  border-radius: 0px !important;
+}

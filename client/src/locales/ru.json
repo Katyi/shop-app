@@ -1,0 +1,263 @@
+{
+  "translation": {
+    "login": {
+      "signIn": "Авторизация",
+      "password": "Пароль",
+      "login": "Логин",
+      "notRememberPassword": "ВЫ НЕ ПОМНИТЕ ПАРОЛЬ?",
+      "createNewAccount": "СОЗДАТЬ НОВУЮ УЧЕТНУЮ ЗАПИСЬ"
+    },
+    "register": {
+      "createAccount": "CОЗДАТЬ АККАУНТ",
+      "username": "Пользователь",
+      "password": "Пароль",
+      "confirmPassword": "Подтвердите пароль",
+      "create": "Создать",
+      "alreadyHaveAccount": "Войдите в систему, если у вас уже есть учетная запись."
+    },
+    "header": {
+      "shop_name": "Shop",
+      "search_placeholder": "Поиск..."
+    },
+    "announcement": {
+      "message": "Суперпредложение! Бесплатная доставка от 5000 ₽"
+    },
+    "slider": {
+      "sliderOneTitle": "НОВАЯ КОЛЛЕКЦИЯ",
+      "sliderOneDesc": "ВСЕ ХИТЫ СЕЗОНА",
+      "sliderTwoTitle": "ОНЛАЙН-ЭКСКЛЮЗИВ",
+      "sliderTwoDesc": "ОГРАНИЧЕННАЯ СЕРИЯ",
+      "sliderThreeTitle": "РАСПРОДАЖА",
+      "sliderThreeDesc": "СКИДКИ ДО 60%",
+      "shopNowButton": "К ПОКУПКАМ"
+    },
+    "categories": {
+      "all": "Все товары",
+      "women": "ЖЕНЩИНАМ",
+      "men": "МУЖЧИНАМ",
+      "accessories": "АКСЕССУАРЫ",
+      "new": "Новые поступления",
+      "sale": "РАСПРОДАЖА",
+      "trousers": "БРЮКИ",
+      "jeans": "ДЖИНСЫ",
+      "knitwear": "Джемперы и свитеры",
+      "coats": "ПАЛЬТО И Куртки",
+      "blouses": "Рубашки и блузки",
+      "shirts": "Рубашки",
+      "dresses": "Платья",
+      "t-shirts": "Футболки и лонгсливы",
+      "socks": "Носки",
+      "shoes": "Обувь",
+      "bags": "Сумки",
+      "jewellery": "Украшения"
+    },
+    "categoryItem": {
+      "shopNowButton": "К ПОКУПКАМ"
+    },
+    "colorOptions": {
+      "all": "Все",
+      "white": "Белый",
+      "black": "Черный",
+      "red": "Красный",
+      "blue": "Голубой",
+      "yellow": "Желтый",
+      "green": "Зеленый",
+      "olive": "Оливковый",
+      "pink": "Розовый",
+      "beige": "Бежевый",
+      "brown": "Коричневый",
+      "navy": "Темно-синий",
+      "orange": "Оранжевый",
+      "gray": "Серый",
+      "gold": "Золотой",
+      "silver": "Серебряный",
+      "khaki": "Хаки",
+      "indigo": "Индиго"
+    },
+    "sizeOptions": {
+      "all": "Все",
+      "oneSize": "Один размер"
+    },
+    "genderOptions": {
+      "male": "Мужской",
+      "female": "Женский"
+    },
+    "productList": {
+      "allCat": "Все товары",
+      "home": "Главная",
+      "clear": "Очистить фильтры",
+      "filter": "Отфильтровать",
+      "sort": "Упорядочить",
+      "color": "Цвет",
+      "size": "Размер",
+      "newest": "Новые",
+      "oldest": "Старые",
+      "priceAsc": "Цена по возр.",
+      "priceDesc": "Цена по убыв.",
+      "resultsFor": "Результаты поиска",
+      "clearSearch": "Очистить поиск",
+      "results": "шт."
+    },
+    "productDetail": {
+      "loading": "Загрузка...",
+      "noProductFound": "Product not found",
+      "toHomePageButton": "Главная",
+      "continueShoppingButton": "К покупкам",
+      "unitPrice": "Цена за ед.",
+      "color": "Цвет",
+      "size": "Размер",
+      "addToCart": "В корзину",
+      "removeFromWishlist": "Удалить из избранного",
+      "addToWishlist": "В избранное"
+    },
+    "products": {
+      "noProductsFound": "Товары не найдены.",
+      "loading": "Загрузка...",
+      "loadMoreButton": "Загрузить больше товаров"
+    },
+    "product": {
+      "addToCart": "В корзину",
+      "quickView": "Быстрый просмотр",
+      "removeFromWishlist": "Удалить из избранного",
+      "addToWishlist": "В избранное"
+    },
+    "profile": {
+      "shoppingBag": "Корзина",
+      "wishlist": "Избранное",
+      "continueShoppingButton": "К покупкам",
+      "toHomePageButton": "Главная",
+      "updateAccountButton": "Редактировать",
+      "personalInfo": "Персональная информация",
+      "fullName": "Ф.И.О.",
+      "birthday": "День рождения",
+      "email": "Email",
+      "phone": "Телефон",
+      "address": "Адрес",
+      "gender": "Пол",
+      "selectDate": "Выберите дату",
+      "occupation": "Профессия",
+      "active": "Активен",
+      "orderHistory": "История заказов",
+      "loadingHistory": "Загрузка истории...",
+      "noOrdersYet": "Вы еще не сделали ни одного заказа.",
+      "orderDate": "Дата",
+      "orderID": "ID заказа",
+      "status": "Статус",
+      "orderTotalAmount": "Общая сумма",
+      "orderUnitQuantity": "Кол-во",
+      "orderUnitPrice": "Цена за ед.",
+      "changePhoto": "Изменить фото",
+      "selectGender": "Выберите пол",
+      "male": "Мужской",
+      "female": "Женский",
+      "saveChangesButton": "Сохранить",
+      "cancelButton": "Отмена"
+    },
+    "wishlist": {
+      "title": "Избранное",
+      "continueShoppingButton": "К покупкам",
+      "toHomePageButton": "Главная",
+      "clearAllButton": "Удалить все",
+      "shoppingBag": "Корзина",
+      "wishlist": "Избранное",
+      "loadingWishlist": "Загрузка избранного...",
+      "wishlistEmpty": "Ваш список избранного пуст",
+      "color": "Цвет",
+      "size": "Размер",
+      "unitQuantity": "Кол-во",
+      "unitPrice": "Цена за ед.",
+      "addToCartButton": "В корзину",
+      "deleteButton": "Удалить",
+      "toastClearEntireList": "Очистить?",
+      "toastYes": "Да, очистить",
+      "toastCancel": "Отмена",
+      "toastSelectColor": "Выберите цвет",
+      "toastSelectSize": "Выберите размер"
+    },
+    "cart": {
+      "title": "Ваша корзина",
+      "continueShoppingButton": "К покупкам",
+      "toHomePageButton": "Главная",
+      "clearAllButton": "Удалить все",
+      "shoppingBag": "Корзина",
+      "wishlist": "Избранное",
+      "loadingCart": "Загрузка корзины...",
+      "cartEmpty": "Ваша корзина пустая",
+      "color": "Цвет",
+      "size": "Размер",
+      "unitPrice": "Цена за ед.",
+      "orderSummary": "Итог заказа",
+      "subtotal": "Промежуточный итог",
+      "shipping": "Доставка",
+      "shippingDiscount": "Скидка на доставку",
+      "total": "Итого",
+      "checkout": "Оформить заказ",
+      "paymentDetails": "Платежные данные",
+      "toastClearEntireList": "Очистить?",
+      "toastAttributesError": "Цвет или размер не выбраны для",
+      "toastCheckoutError": "Ошибка при оформлении заказа",
+      "toastYes": "Да, очистить",
+      "toastCancel": "Отмена",
+      "freeShippingPromo": "Добавьте еще {{amount}} до бесплатной доставки!"
+    },
+    "newsletter": {
+      "title": "Связаться с нами",
+      "desc": "Отправьте нам электронное письмо",
+      "thank": "Спасибо! Мы свяжемся с вами в ближайшее время.",
+      "send": "ОТПРАВИТЬ ПИСЬМО",
+      "sending": "ОТПРАВКА...",
+      "sendAgain": "Отправить еще одно сообщение"
+    },
+    "footer": {
+      "shop_name": "SHOP",
+      "description": "Это мой портфолио интернет-магазин.",
+      "techStack": "Full-stack приложение для покупок на стеке React, NestJS, Postgres, JWT, Zustand, Stripe.",
+      "links": "Полезные ссылки",
+      "home": "Главная",
+      "cart": "Корзина",
+      "men": "Мужчинам",
+      "women": "Женщинам",
+      "accessories": "Аксессуары",
+      "myAccount": "Мой аккаунт",
+      "wishlist": "Избранное",
+      "contact": "Контакты",
+      "address": "109012, Москва, Красная площадь, 3",
+      "phone": "+7 (495) 788-43-30"
+    },
+    "checkoutForm": {
+      "toastError": "Произошла неизвестная ошибка",
+      "toastPaymentSuccess": "Оплата прошла успешно и заказ оформлен!",
+      "toastFailedSaveOrder": "Оплата прошла успешно, но заказ не удалось сохранить.",
+      "processing": "Обработка...",
+      "payNow": "Оплатить"
+    },
+    "orderSuccess": {
+      "thankYou": "Спасибо!",
+      "paymentSuccessful": "Ваш платеж прошел успешно и ваш заказ обрабатывается.",
+      "backToShopping": "К покупкам"
+    },
+    "searchDrawer": {
+      "search_placeholder": "Искать...",
+      "trending_searches": "Часто ищут",
+      "previous_searches": "История",
+      "clear": "Очистить"
+    },
+    "cartStore": {
+      "loginRequired": "Пожалуйста, войдите в свой аккаунт",
+      "productAdded": "Товар добавлен в корзину",
+      "failedToAdd": "Не удалось добавить товар",
+      "itemRemoved": "Товар удален из корзины",
+      "failedToDelete": "Не удалось удалить элемент",
+      "cartCleared": "Корзина удалена",
+      "failedToClearCart": "Не удалось очистить корзину",
+      "CartUpdated": "Корзина обновлена",
+      "failedToUpdateCart": "Не удалось обновить корзину"
+    },
+    "wishlistStore":{
+      "loginRequired": "Пожалуйста, войдите в свой аккаунт",
+      "wishlistAlreadyEmpty": "Список желаний уже пуст",
+      "wishlistCleared": "Избранное удалено",
+      "failedToClearWishlist": "Не удалось очистить избранное"
+    }
+  }
+}

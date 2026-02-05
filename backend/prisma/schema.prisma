@@ -1,0 +1,142 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id String @id @default(uuid())
+
+  username   String  @unique
+  fullname   String  @default("")
+  email      String  @unique
+  password   String
+  role       Role    @default(USER)
+  img        String  @default("/uploads/default-avatar.png") @map("avatar_path")
+  address    String  @default("")
+  phone      String  @default("")
+  occupation String  @default("")
+  gender     String  @default("")
+  birthday   String  @default("")
+  active     Boolean @default(true)
+
+  wishlist Product[] @relation("UserWishlist")
+
+  createdProducts Product[] @relation("AdminProducts")
+
+  createdAt DateTime   @default(now()) @map("created_at")
+  updatedAt DateTime   @updatedAt @map("updated_at")
+  cartItems CartItem[]
+  orders    Order[]
+
+  @@map("user")
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+model Product {
+  id String @id @default(uuid())
+
+  // title       String
+  // description String   @default("")
+  // img        String
+  img        String   @default("/uploads/default-product.png")
+  categories String[]
+  size       String[]
+  color      String[]
+  price      Float    @default(0)
+  oldPrice   Float? // Старая цена (опционально)
+  inStock    Boolean  @default(true)
+
+  createdBy User?   @relation("AdminProducts", fields: [userId], references: [id])
+  userId    String? @map("user_id")
+
+  favoredBy User[] @relation("UserWishlist")
+
+  createdAt           DateTime             @default(now()) @map("created_at")
+  updatedAt           DateTime             @updatedAt @map("updated_at")
+  cartItems           CartItem[]
+  orderItems          OrderItem[]
+  productTranslations ProductTranslation[]
+
+  // Связи будут добавлены позже (для Cart и Order)
+  @@map("product")
+}
+
+model ProductTranslation {
+  id          String @id @default(uuid())
+  language    String @default("en")
+  title       String
+  description String
+
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([productId, language])
+  @@map("product_translation")
+}
+
+model CartItem {
+  id String @id @default(uuid())
+
+  // Связь с пользователем
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId String @map("user_id")
+
+  // Связь с продуктом
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  productId String  @map("product_id")
+
+  // Дополнительные данные корзины
+  quantity Int     @default(1)
+  size     String?
+  color    String?
+
+  @@map("cart_item")
+}
+
+model Order {
+  id     String @id @default(uuid())
+  user   User   @relation(fields: [userId], references: [id])
+  userId String @map("user_id")
+
+  items OrderItem[]
+
+  totalAmount Float       @default(0) @map("total_amount")
+  status      OrderStatus @default(PENDING)
+  address     String // Адрес доставки для конкретного заказа
+  phone       String? // Телефон для связи
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("order")
+}
+
+model OrderItem {
+  id      String @id @default(uuid())
+  order   Order  @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  orderId String @map("order_id")
+
+  product   Product @relation(fields: [productId], references: [id])
+  productId String  @map("product_id")
+
+  quantity Int
+  price    Float // Сохраняем цену на момент покупки!
+
+  @@map("order_item")
+}
+
+enum OrderStatus {
+  PENDING
+  PROCESSING
+  SHIPPED
+  DELIVERED
+  CANCELLED
+}
