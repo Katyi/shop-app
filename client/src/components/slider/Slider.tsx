@@ -40,8 +40,9 @@ const Slider = () => {
       setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
     }
   };
+
   return (
-    <div className="flex w-full h-[calc(100vh-108px)] relative overflow-hidden bg-green-50">
+    <div className="flex w-full h-[calc(100vh-108px)] relative overflow-hidden bg-gray-100">
       {/* Arrow Left */}
       <div
         onClick={() => handleClick('left')}
