@@ -28,7 +28,6 @@
     "@nestjs/mapped-types": "*",
     "@nestjs/passport": "^11.0.5",
     "@nestjs/platform-express": "^11.0.1",
-    "@prisma/adapter-neon": "^7.3.0",
     "@prisma/adapter-pg": "^7.2.0",
     "@prisma/adapter-ppg": "^7.2.0",
     "@prisma/client": "^7.2.0",
@@ -44,8 +43,7 @@
     "pg": "^8.17.2",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2",
-    "stripe": "^20.1.2",
-    "ws": "^8.19.0"
+    "stripe": "^20.1.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
