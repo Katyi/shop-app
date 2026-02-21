@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import backGroundphoto from '../../assets/backGroundphoto1.jpg';
+import backGroundphoto from '../../../public/backGroundPhoto/backGroundphoto1.avif';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore';
 import { loginSchema } from '../../lib/schema';

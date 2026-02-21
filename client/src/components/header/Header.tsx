@@ -9,7 +9,6 @@ import { MenuOutlined, Search } from '@mui/icons-material';
 import logOut from '../../assets/icons/log-out.svg';
 import heart from '../../assets/icons/heart.svg';
 import shoppingCart from '../../assets/icons/shopping-cart.svg';
-// import defaultUser from '../../assets/icons/default-avatar.png';
 import { useTranslation } from 'react-i18next';
 import CategoryDrawer from '../categoryDrawer/CategoryDrawer';
 import SearchDrawer from '../searchDrawer/SearchDrawer';

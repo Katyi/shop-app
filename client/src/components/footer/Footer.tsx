@@ -9,7 +9,8 @@ import {
   Twitter,
 } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
-import creditCards from '../../assets/footer/creditCards.png';
+// import creditCards from '../../assets/footer/creditCards.png';
+import creditCards from '../../../public/footer/creditCards.png';
 import Select from '../UI/selectLang/SelectLang';
 import { LANGUAGES } from '../../constants/languages';
 import { useState } from 'react';

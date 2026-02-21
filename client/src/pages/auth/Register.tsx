@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import backGroundphoto from '../../assets/backGroundphoto1.jpg';
+import backGroundphoto from '../../../public/backGroundPhoto/backGroundphoto1.avif';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore';
 import { registerSchema } from '../../lib/schema';
@@ -48,7 +48,7 @@ const Register = () => {
   const handleInputChange =
     (
       setter: React.Dispatch<React.SetStateAction<string>>,
-      field: keyof ValidationErrors
+      field: keyof ValidationErrors,
     ) =>
     (e: React.ChangeEvent<HTMLInputElement>) => {
       setter(e.target.value);

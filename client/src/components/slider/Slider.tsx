@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import image_0 from '../../assets/slider/photo_3.avif';
-import image_1 from '../../assets/slider/photo_4.avif';
-import image_2 from '../../assets/slider/photo_5.avif';
+// import image_0 from '../../assets/slider/photo_3.avif';
+// import image_1 from '../../assets/slider/photo_4.avif';
+// import image_2 from '../../assets/slider/photo_5.avif';
+import image_0 from '../../../public/slider/photo_3.avif';
+import image_1 from '../../../public/slider/photo_4.avif';
+import image_2 from '../../../public/slider/photo_5.avif';
+
 import leftArrow from '../../assets/icons/arrow-left.svg';
 import rightArrow from '../../assets/icons/arrow-right.svg';
 import { useTranslation } from 'react-i18next';

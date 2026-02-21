@@ -1,6 +1,9 @@
-import category_photo_3 from '../assets/categories/accessories.jpeg';
-import category_photo_1 from '../assets/categories/women.jpeg';
-import category_photo_2 from '../assets/categories/men.jpeg';
+// import category_photo_3 from '../assets/categories/accessories.jpeg';
+// import category_photo_1 from '../assets/categories/women.jpeg';
+// import category_photo_2 from '../assets/categories/men.jpeg';
+import category_photo_3 from '../../public/categories/accessories.jpeg';
+import category_photo_1 from '../../public/categories/women.jpeg';
+import category_photo_2 from '../../public/categories/men.jpeg';
 import { useTranslation } from 'react-i18next';
 
 export const useCategories = () => {
