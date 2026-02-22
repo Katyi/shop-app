@@ -1,9 +1,3 @@
-// import category_photo_3 from '../assets/categories/accessories.jpeg';
-// import category_photo_1 from '../assets/categories/women.jpeg';
-// import category_photo_2 from '../assets/categories/men.jpeg';
-import category_photo_3 from '../../public/categories/accessories.jpeg';
-import category_photo_1 from '../../public/categories/women.jpeg';
-import category_photo_2 from '../../public/categories/men.jpeg';
 import { useTranslation } from 'react-i18next';
 
 export const useCategories = () => {
@@ -16,7 +10,7 @@ export const useCategories = () => {
       id: 'women',
       title: t('categories.women'),
       cat: 'women',
-      img: category_photo_1,
+      img: '/categories/women.jpeg',
     },
     // Используем один ключ "trousers"
     {
@@ -60,7 +54,7 @@ export const useCategories = () => {
       id: 'men',
       title: t('categories.men'),
       cat: 'men',
-      img: category_photo_2,
+      img: '/categories/men.jpeg',
     },
     {
       id: 'men-trousers',
@@ -89,7 +83,7 @@ export const useCategories = () => {
       id: 'accessories',
       title: t('categories.accessories'),
       cat: 'accessories',
-      img: category_photo_3,
+      img: '/categories/accessories.jpeg',
     },
     { id: 'acc-bags', title: t('categories.bags'), cat: 'accessories,bags' },
     {

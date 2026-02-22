@@ -1,12 +1,5 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import image_0 from '../../assets/slider/photo_3.avif';
-// import image_1 from '../../assets/slider/photo_4.avif';
-// import image_2 from '../../assets/slider/photo_5.avif';
-import image_0 from '../../../public/slider/photo_3.avif';
-import image_1 from '../../../public/slider/photo_4.avif';
-import image_2 from '../../../public/slider/photo_5.avif';
-
 import leftArrow from '../../assets/icons/arrow-left.svg';
 import rightArrow from '../../assets/icons/arrow-right.svg';
 import { useTranslation } from 'react-i18next';
@@ -19,19 +12,19 @@ const Slider = () => {
   const sliderItems = [
     {
       id: 1,
-      img: image_0,
+      img: '/slider/photo_3.avif',
       title: t('slider.sliderOneTitle'),
       desc: t('slider.sliderOneDesc'),
     },
     {
       id: 2,
-      img: image_2,
+      img: '/slider/photo_5.avif',
       title: t('slider.sliderTwoTitle'),
       desc: t('slider.sliderTwoDesc'),
     },
     {
       id: 3,
-      img: image_1,
+      img: '/slider/photo_4.avif',
       title: t('slider.sliderThreeTitle'),
       desc: t('slider.sliderThreeDesc'),
     },

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import backGroundphoto from '../../../public/backGroundPhoto/backGroundphoto1.avif';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore';
 import { registerSchema } from '../../lib/schema';
@@ -66,7 +65,7 @@ const Register = () => {
     <div
       className="authContainer justify-center items-center bg-center bg-cover max-sm:bg-[rgba(180,130,238,0.4)]"
       style={{
-        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(${backGroundphoto})`,
+        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(/backGroundPhoto/backGroundphoto1.avif)`,
       }}
     >
       <div className="bg-white p-5 w-3/4 lg:w-1/3">

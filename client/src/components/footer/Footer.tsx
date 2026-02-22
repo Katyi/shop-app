@@ -9,8 +9,6 @@ import {
   Twitter,
 } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
-// import creditCards from '../../assets/footer/creditCards.png';
-import creditCards from '../../../public/footer/creditCards.png';
 import Select from '../UI/selectLang/SelectLang';
 import { LANGUAGES } from '../../constants/languages';
 import { useState } from 'react';
@@ -138,7 +136,11 @@ const Footer = () => {
         <div className="mb-5 flex items-center">
           <MailOutlined className="mr-2.5" /> admin@shop.com
         </div>
-        <img src={creditCards} alt="Payment methods" className="w-[70%]" />
+        <img
+          src="/footer/creditCards.png"
+          alt="Payment methods"
+          className="w-[70%]"
+        />
       </div>
     </footer>
   );
