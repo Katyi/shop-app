@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
-import { loadStripe } from '@stripe/stripe-js';
-import { Elements } from '@stripe/react-stripe-js';
+// import { loadStripe } from '@stripe/stripe-js';
+// import { Elements } from '@stripe/react-stripe-js';
 import { $api } from '../../api/interceptors';
 import { useNavigate } from 'react-router-dom';
 import { Add, Remove, DeleteOutline } from '@mui/icons-material';
 import { useCartStore } from '../../store/cartStore';
 import { useWishlistStore } from '../../store/wishlistStore';
 import { toast } from 'sonner';
-import { CheckoutForm } from '../../components/checkout/CheckoutForm';
+// import { CheckoutForm } from '../../components/checkout/CheckoutForm';
 import { Modal } from '../../components/UI/modal/Modal';
 import { useTranslation } from 'react-i18next';
 import { formatPrice } from '../../lib/formatPrice';
@@ -19,14 +19,15 @@ import {
 } from '../../lib/orderLogic';
 import { getProductTranslation } from '../../lib/product-helpers';
 import { getImageUrl } from '../../lib/getImageUrl';
+import { FakeCheckoutForm } from '../../components/fakeCheckout/FakeCheckoutForm';
 
-const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY, {
-  developerTools: {
-    assistant: {
-      enabled: false,
-    },
-  },
-});
+// const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY, {
+//   developerTools: {
+//     assistant: {
+//       enabled: false,
+//     },
+//   },
+// });
 
 const Cart = () => {
   const { t, i18n } = useTranslation();
@@ -378,7 +379,8 @@ const Cart = () => {
                   <h2 className="text-xl font-bold mb-4">
                     {t('cart.paymentDetails')}
                   </h2>
-                  <Elements
+                  {/* old code for stipe */}
+                  {/* <Elements
                     stripe={stripePromise}
                     options={{
                       clientSecret,
@@ -388,7 +390,10 @@ const Cart = () => {
                     }}
                   >
                     <CheckoutForm />
-                  </Elements>
+                  </Elements> */}
+
+                  {/* fake checkout */}
+                  <FakeCheckoutForm />
                 </div>
               )}
             </Modal>

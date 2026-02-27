@@ -229,7 +229,8 @@
       "toastPaymentSuccess": "Payment successful and order created!",
       "toastFailedSaveOrder": "Payment ok, but failed to save order.",
       "processing": "Processing...",
-      "payNow": "Pay now"
+      "payNow": "Pay now",
+      "demoMode": "Demo Mode: just click «Pay now»" 
     },
     "orderSuccess": {
       "thankYou": "Thank you!",
