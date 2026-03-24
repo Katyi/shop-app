@@ -77,7 +77,8 @@ const Header = () => {
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 target.onerror = null;
-                target.src = getImageUrl('/uploads/default-avatar.png');
+                // target.src = getImageUrl('/uploads/default-avatar.png');
+                target.src = '/default-avatar.png';
               }}
             />
           </Link>

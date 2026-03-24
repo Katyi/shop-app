@@ -284,9 +284,7 @@ const Profile = () => {
                             onError={(e) => {
                               const target = e.target as HTMLImageElement;
                               target.onerror = null;
-                              target.src = getImageUrl(
-                                '/uploads/default-product.png',
-                              );
+                              target.src = '/default-product.png';
                             }}
                           />
                           <div className="flex-1 flex flex-col justify-center">
@@ -337,7 +335,8 @@ const Profile = () => {
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.onerror = null;
-                      target.src = getImageUrl('/uploads/default-avatar.png'); // Заглушка для аватара
+                      // target.src = getImageUrl('/uploads/default-avatar.png');
+                      target.src = '/default-avatar.png'; // Заглушка для аватара
                     }}
                   />
                 </div>

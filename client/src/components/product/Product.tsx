@@ -46,7 +46,8 @@ const Product = ({ item }: ProductProps) => {
         onError={(e) => {
           const target = e.target as HTMLImageElement;
           target.onerror = null;
-          target.src = getImageUrl('/uploads/default-product.png');
+          // target.src = getImageUrl('/uploads/default-product.png');
+          target.src = '/default-product.png';
         }}
       />
 
