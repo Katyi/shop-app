@@ -134,7 +134,7 @@ const Profile = () => {
               {t('profile.continueShoppingButton')}
             </button>
             <button
-              onClick={() => navigate('/home')}
+              onClick={() => navigate('/')}
               className="px-5 py-2 border border-black text-xs uppercase font-bold hover:bg-black hover:text-white transition duration-300 cursor-pointer"
             >
               {t('profile.toHomePageButton')}

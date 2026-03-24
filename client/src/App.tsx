@@ -49,19 +49,18 @@ function App() {
 
       <Routes>
         {/* Публичные страницы БЕЗ Header */}
-        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-
-        {/* ЗАЩИЩЕННЫЕ страницы */}
-        <Route element={<ProtectedRoute />}>
-          {/* Группа страниц С Header */}
-          <Route element={<MainLayout />}>
-            <Route path="/home" element={<Home />} />
+        {/* Группа страниц С Header */}
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<ProductList />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+          {/* ЗАЩИЩЕННЫЕ страницы */}
+          <Route element={<ProtectedRoute />}>
             <Route path="/profile" element={<Profile />} />
-            <Route path="/products" element={<ProductList />} />
-            <Route path="/product/:id" element={<ProductDetail />} />
-            <Route path="/wishlist" element={<Wishlist />} />
-            <Route path="/cart" element={<Cart />} />
             <Route path="/order-success" element={<OrderSuccess />} />
           </Route>
         </Route>

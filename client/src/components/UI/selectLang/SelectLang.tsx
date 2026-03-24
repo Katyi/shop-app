@@ -50,9 +50,9 @@ const SelectLang: React.FC<SelectLangProps> = ({
     () =>
       options.reduce(
         (a, b) => (a.label.length > b.label.length ? a : b),
-        options[0]
+        options[0],
       ).label,
-    [options]
+    [options],
   );
 
   const currentLang =
@@ -65,7 +65,7 @@ const SelectLang: React.FC<SelectLangProps> = ({
         onClick={() => setOpen(!open)}
         className={`
           relative cursor-pointer flex items-center justify-between
-          border border-[#e5e5e5] px-4 h-[30px] transition-all bg-white
+          border border-[#e5e5e5] px-4 h-[30px] transition-all 
           ${open ? 'border-black' : 'hover:border-gray-400'}
         `}
         /* style sets minimum width based on longest word + arrow padding */
@@ -86,11 +86,11 @@ const SelectLang: React.FC<SelectLangProps> = ({
 
       {/* Dropdown */}
       <div
-        className={`absolute left-0 right-0 top-full border border-[#e5e5e5] bg-white py-2 shadow-sm transition-all z-50 ${
+        className={`absolute left-0 right-0 top-full border border-[#e5e5e5] py-2 shadow-sm transition-all z-50 ${
           open
             ? 'visible opacity-100 translate-y-0'
             : 'invisible opacity-0 -translate-y-1'
-        }`}
+        } ${className}`}
       >
         {options?.map((opt) => (
           <div

@@ -113,7 +113,7 @@ const ProductList: React.FC = () => {
           {getCategoryTitle()}
         </h1> */}
         <button
-          onClick={() => navigate('/home')}
+          onClick={() => navigate('/')}
           className="px-4 py-2 border border-black hover:bg-black hover:text-white uppercase transition-colors duration-300 ease-in-out text-[10px] md:text-xs font-medium cursor-pointer"
         >
           {/* To Home Page */}

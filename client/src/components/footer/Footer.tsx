@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="flex justify-between items-center">
           <h1 className="text-3xl font-bold">{t('footer.shop_name')}</h1>
           <Select
-            className="md:hidden"
+            className="md:hidden bg-white"
             options={LANGUAGES}
             open={open}
             setOpen={setOpen}
@@ -71,7 +71,7 @@ const Footer = () => {
         </h3>
         <ul className="m-0 p-0 list-none flex flex-wrap">
           <li
-            onClick={() => navigate('/home')}
+            onClick={() => navigate('/')}
             className="w-1/2 mb-2.5 cursor-pointer hover:underline"
           >
             {/* Home */}

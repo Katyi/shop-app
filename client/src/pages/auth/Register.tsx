@@ -3,6 +3,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore';
 import { registerSchema } from '../../lib/schema';
 import { useTranslation } from 'react-i18next';
+import backArrow from '../../assets/icons/arrow-back.svg';
+import Select from '../../components/UI/selectLang/SelectLang';
+import { LANGUAGES } from '../../constants/languages';
 
 type ValidationErrors = {
   username?: string[];
@@ -19,6 +22,7 @@ const Register = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [errors, setErrors] = useState<ValidationErrors>({});
+  const [open, setOpen] = useState(false);
 
   const { register, token, error, resetError } = useAuthStore();
 
@@ -55,9 +59,17 @@ const Register = () => {
       if (error) resetError();
     };
 
+  const handleBack = () => {
+    if (window.history.length > 1) {
+      navigate(-1);
+    } else {
+      navigate('/'); // Резервный путь, если истории нет
+    }
+  };
+
   useEffect(() => {
     if (token) {
-      navigate('/home');
+      navigate('/');
     }
   }, [token, navigate]);
 
@@ -68,6 +80,36 @@ const Register = () => {
         backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(/backGroundPhoto/backGroundphoto1.avif)`,
       }}
     >
+      <div className="absolute top-4 left-4 flex items-center gap-2">
+        <button
+          onClick={() => handleBack()}
+          className="flex items-center gap-1 bg-transparent border-none cursor-pointer"
+        >
+          <img src={backArrow} alt="backArrow" className="w-6 h-6" />
+          <p className="uppercase text-gray-600 hidden md:block">
+            {t('login.back')}
+          </p>
+        </button>
+        {/* <Link to="/" className="hidden sm:block">
+          <p className="uppercase text-gray-600">{t('login.home')}</p>
+        </Link> */}
+      </div>
+
+      <Link to="/" className="absolute top-4 lg:w-1/3 flex md:justify-center">
+        <h1 className="text-3xl font-bold md:text-[37px] uppercase -tracking-tighter">
+          {t('header.shop_name')}
+        </h1>
+      </Link>
+
+      <div className="absolute top-4 right-4">
+        <Select
+          options={LANGUAGES}
+          open={open}
+          setOpen={setOpen}
+          className="bg-transparent"
+        />
+      </div>
+
       <div className="bg-white p-5 w-3/4 lg:w-1/3">
         <h2 className="text-2xl font-light">{t('register.createAccount')}</h2>
         <form className="flex flex-col" onSubmit={handleSubmit}>
@@ -146,7 +188,7 @@ const Register = () => {
 
           <Link
             className="my-1 mt-4 text-xs font-medium underline cursor-pointer uppercase"
-            to="/"
+            to="/login"
           >
             {/* SIGN IN IF YOU ALREADY HAVE AN ACCOUNT */}
             {t('register.alreadyHaveAccount')}

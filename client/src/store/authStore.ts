@@ -106,7 +106,7 @@ export const useAuthStore = create<AuthState>()(
         set({ token: null, refreshToken: null, error: null });
         useUserStore.getState().setUser(null); // Очищаем данные юзера
         localStorage.removeItem('auth-storage');
-        window.location.href = '/';
+        // window.location.href = '/';
       },
 
       // updateUser: async (data: Partial<User>) => {

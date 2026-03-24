@@ -5,7 +5,9 @@
       "password": "Пароль",
       "login": "Логин",
       "notRememberPassword": "ВЫ НЕ ПОМНИТЕ ПАРОЛЬ?",
-      "createNewAccount": "СОЗДАТЬ НОВУЮ УЧЕТНУЮ ЗАПИСЬ"
+      "createNewAccount": "СОЗДАТЬ НОВУЮ УЧЕТНУЮ ЗАПИСЬ",
+      "back": "Обратно",
+      "home": "Главная"
     },
     "register": {
       "createAccount": "CОЗДАТЬ АККАУНТ",
@@ -172,7 +174,8 @@
       "toastYes": "Да, очистить",
       "toastCancel": "Отмена",
       "toastSelectColor": "Выберите цвет",
-      "toastSelectSize": "Выберите размер"
+      "toastSelectSize": "Выберите размер",
+      "notAuthorized": "Вы не авторизованы"
     },
     "cart": {
       "title": "Ваша корзина",
@@ -198,7 +201,8 @@
       "toastCheckoutError": "Ошибка при оформлении заказа",
       "toastYes": "Да, очистить",
       "toastCancel": "Отмена",
-      "freeShippingPromo": "Добавьте еще {{amount}} до бесплатной доставки!"
+      "freeShippingPromo": "Добавьте еще {{amount}} до бесплатной доставки!",
+      "signIn": "Войти"
     },
     "newsletter": {
       "title": "Связаться с нами",

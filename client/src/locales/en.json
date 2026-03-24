@@ -5,7 +5,9 @@
       "password": "Password",
       "login": "Login",
       "notRememberPassword": "DO NOT YOU REMEMBER THE PASSWORD?",
-      "createNewAccount": "CREATE A NEW ACCOUNT"
+      "createNewAccount": "CREATE A NEW ACCOUNT",
+      "back": "Back",
+      "home": "Home"
     },
     "register": {
       "createAccount": "CREATE AN ACCOUNT",
@@ -172,7 +174,8 @@
       "toastYes": "Yes, clear entire list",
       "toastCancel": "Cancel",
       "toastSelectColor": "Select color",
-      "toastSelectSize": "Select size"
+      "toastSelectSize": "Select size",
+      "notAuthorized": "You are not authorized"
     },
     "cart": {
       "title": "YOUR SHOPPING BAG",
@@ -198,7 +201,8 @@
       "toastCheckoutError": "Checkout Error",
       "toastYes": "Yes, clear",
       "toastCancel": "Cancel",
-      "freeShippingPromo": "Add {{amount}} for free shipping!"
+      "freeShippingPromo": "Add {{amount}} for free shipping!",
+      "signIn": "Sign in"
     },
     "newsletter": {
       "title": "Contact Us",

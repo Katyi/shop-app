@@ -113,7 +113,7 @@ const ProductDetail = () => {
         <div className="flex-1 flex flex-col gap-6 px-0 md:px-12">
           <div className="flex flex-wrap gap-2.5">
             <button
-              onClick={() => navigate('/home')}
+              onClick={() => navigate('/')}
               className="border-2 border-teal-600 p-1 lg:px-4 lg:py-2 hover:bg-[#f8f4f4] transition cursor-pointer"
             >
               {t('productDetail.toHomePageButton')}

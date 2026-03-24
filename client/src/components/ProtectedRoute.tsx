@@ -9,7 +9,7 @@ const ProtectedRoute = () => {
 
   // Если нет ни юзера, ни токена — отправляем на логин
   if (!user && !token) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/login" replace />;
   }
 
   // Если все ок — рендерим вложенные роуты
