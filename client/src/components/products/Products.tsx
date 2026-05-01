@@ -61,7 +61,7 @@ const Products = ({ cat, filters, sort, search }: ProductsProps) => {
   }, [loadProducts, clearProducts]);
 
   const progressPercentage = Math.min(
-    (products.length / totalCount) * 100,
+    (products?.length / totalCount) * 100,
     100,
   );
 
@@ -81,7 +81,7 @@ const Products = ({ cat, filters, sort, search }: ProductsProps) => {
       </div>
 
       {/* If nothing is found and it doesn't load */}
-      {!isLoading && products.length === 0 && (
+      {!isLoading && products?.length === 0 && (
         <div className="w-full text-center py-20 text-gray-500">
           {/* No products found. */}
           {t('products.noProductsFound')}
@@ -89,7 +89,7 @@ const Products = ({ cat, filters, sort, search }: ProductsProps) => {
       )}
 
       {/* Progress bar button */}
-      {products.length > 0 && products.length < totalCount && (
+      {products?.length > 0 && products?.length < totalCount && (
         <button
           onClick={handleLoadMore}
           disabled={isLoading}

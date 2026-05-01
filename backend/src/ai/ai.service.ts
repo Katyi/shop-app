@@ -7,9 +7,8 @@ export class AiService {
 
   constructor() {
     this.openai = new OpenAI({
-      // baseURL: 'https://api.deepseek.com', // Указываем адрес DeepSeek
       baseURL: 'https://openrouter.ai/api/v1', // OpenRouter
-      apiKey: process.env.DEEPSEEK_API_KEY,
+      apiKey: process.env.AI_API_KEY,
       defaultHeaders: {
         'HTTP-Referer': 'http://localhost:3000', // Обязательно для OpenRouter
         'X-Title': 'shop-app', // Название твоего проекта
@@ -51,8 +50,7 @@ export class AiService {
 
     try {
       const completion = await this.openai.chat.completions.create({
-        // model: 'stepfun/step-3.5-flash:free',
-        model: 'arcee-ai/trinity-large-preview:free',
+        model: 'openai/gpt-oss-120b:free',
         messages: [
           { role: 'system', content: systemInstruction },
           ...apiMessages,
