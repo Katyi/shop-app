@@ -57,3 +57,5 @@ pids
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 payment.service.oldCode.ts
+
+*.sql

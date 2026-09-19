@@ -7,12 +7,8 @@ export class AiService {
 
   constructor() {
     this.openai = new OpenAI({
-      baseURL: 'https://openrouter.ai/api/v1', // OpenRouter
+      baseURL: 'https://api.proxyapi.ru/v1',
       apiKey: process.env.AI_API_KEY,
-      defaultHeaders: {
-        'HTTP-Referer': 'http://localhost:3000', // Обязательно для OpenRouter
-        'X-Title': 'shop-app', // Название твоего проекта
-      },
     });
   }
 
@@ -50,7 +46,7 @@ export class AiService {
 
     try {
       const completion = await this.openai.chat.completions.create({
-        model: 'openai/gpt-oss-120b:free',
+        model: 'openai/gpt-oss-120b',
         messages: [
           { role: 'system', content: systemInstruction },
           ...apiMessages,
